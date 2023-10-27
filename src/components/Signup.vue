@@ -1,35 +1,35 @@
 <template>
-    <div id="container"> 
-        <div id="leftcontainer">
+    <div id="mainContainer">  
+        <div id="imageContainer">  
             <img src="../assets/signup.jpeg" alt="signup picture">
         </div>
 
-        <div id="rightcontainer">
-            <div id="contentofwords">
+        <div id="formContainer"> 
+            <div id="headerText">  
                 <h1>Create an Account</h1> 
             </div>
 
-            <form id="myform" @submit.prevent="register">
-                <div class="formli">
-                    <label for="userName">What should we call you?</label>
-                    <input type="text" id="userName" v-model="name" pattern="[a-zA-Z0-9._]+" title="Letters, numbers, underscore and period are allowed" placeholder="Enter your username" required> 
+            <form id="registrationForm"> 
+                <div class="inputFields"> 
+                    <label for="userNameInput">What should we call you?</label>  
+                    <input type="text" id="userNameInput" v-model="name" pattern="[a-zA-Z0-9._]+" title="Letters, numbers, underscore and period are allowed" placeholder="Enter your username" required> 
                 
-                    <label for="email">What's your email?</label>
-                    <input type="email" id="email" v-model="email" placeholder="Enter your email address" required>
+                    <label for="emailInput">What's your email?</label>  
+                    <input type="email" id="emailInput" v-model="email" placeholder="Enter your email address" required>
                    
-                    <label for="password">Create a password</label>
-                    <input type="password" id="password" v-model="password" placeholder="Enter your password" required> 
+                    <label for="passwordInput">Create a password</label>  
+                    <input type="password" id="passwordInput" v-model="password" placeholder="Enter your password" required> 
                     
-                    <div id="buttonsupdate">
-                        <button id="createaccountbutton" type="submit">Create Account</button> 
+                    <div id="submitBtnContainer"> 
+                        <button id="submitAccountBtn" type="submit">Create Account</button>  
                     </div>
                 </div>
             </form>
 
-            <div id="gotologin">
+            <div id="loginPrompt"> 
                 <span>Already have an account?</span> 
                 <br>
-                <button id="loginbutton" type="button" v-on:click="goToLogIn">Log in</button> 
+                <button id="loginBtn" type="button" v-on:click="goToLogIn">Log in</button>  <!-- Changed from "loginbutton" -->
             </div>
         </div>
     </div>
