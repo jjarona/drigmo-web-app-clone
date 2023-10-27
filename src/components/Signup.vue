@@ -35,6 +35,7 @@
     </div>
 </template>
  
+ 
 <script>
     import { getAuth, createUserWithEmailAndPassword, updateProfile, sendEmailVerification, onAuthStateChanged} from "firebase/auth";
 
@@ -74,4 +75,111 @@
 </script>
  
  
+<style scoped>
 
+/* Main Container */
+#mainContainer {
+    display: flex;
+    width: 90vw;
+    margin-top: 3vh;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Image Container */
+#imageContainer {
+    flex: 0.6;
+    margin-top: 7vh;
+    font-family: 'Arial', sans-serif;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+/* Form Container */
+#formContainer {
+    flex: 0.4;
+    margin-top: 8vh;
+    margin-left: 3vh;
+}
+
+#headerText h1 {
+    font-family: 'Courier New', monospace;
+    line-height: 30px;
+}
+
+/* Form Styles */
+#registrationForm {
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+}
+
+.inputFields {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+
+form {
+    text-align: center;
+    align-items: center;
+    margin: auto;
+}
+
+input {
+    border: 1.5px solid #aaa;
+    padding: 14px 22px;
+    margin: 12px 0;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Courier New', monospace;
+}
+
+input:focus {
+    border-color: #666;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+}
+
+::placeholder {
+    font-size: 18px;
+    color: #bbb;
+}
+
+/* Button Styles */
+#submitAccountBtn {
+    background-color: #9fadd3;
+    border: 2px solid #9fadd3;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: bold;
+    padding: 12px 34px;
+    font-size: 19px;
+    width: 100%;
+}
+
+#submitAccountBtn:hover {
+    background-color: #8f9999;
+    border: 2px solid #8f9999;
+}
+
+/* Login Prompt */
+#loginPrompt {
+    display: flex;
+    margin-top: 1vh;
+}
+
+#loginBtn {
+    background: transparent;
+    border: none;
+    margin-left: 0.5vw;
+    font-size: 1em;
+    color: #555;
+}
+
+#loginBtn:hover {
+    color: #000;
+    border-bottom: 1px solid #333;
+}
+
+</style>
