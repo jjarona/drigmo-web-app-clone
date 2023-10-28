@@ -1,8 +1,12 @@
 <template>
-    <h1 id = "Current"> Current portfolio</h1>
-    <h1>Search Results</h1>
-    <h4>You searched for: {{searchText}}</h4>
+
+    <div id = "page-title">Search Results</div>
+    <div id = "user-query">You searched for: {{ searchText }} </div>
+
     <div id="userQueryView"></div>
+
+    <!-- <h1 id = "Current"> Current portfolio</h1>
+    <h1>Search Results</h1> -->
 
     <!-- <table id = "table">
         <tr>
@@ -123,11 +127,42 @@ export default {
 </script>
 
 <style scoped>
+body {
+    font-family: sans-serif;
+    line-height: 1.4rem;
+}
+
+#page-title {
+    font-size:xx-large;
+    font-weight: bolder;
+    margin-left: 25%;
+}
+
+#user-query {
+    margin-top: 0.3rem;
+    margin-left: 25%;
+    font-size: large;
+    font-style: oblique;
+}
+
 .profile {
-    width: 80%;
-    margin: auto;
-    border: 2px solid grey;
-    padding: 0.5em;
+    Width: 40%;
+    margin:auto;
+    font-family:sans-serif;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    
+}
+.name {
+    font-size: large;
+    font-weight: bold;
+    margin: 4px;
+}
+
+.description {
+    margin: 0.2rem;
+    margin-left: 2rem;
+
 }
 
 
