@@ -8,7 +8,7 @@
     import SignUp from '../components/SignUp.vue'
 
     export default {
-        name: "SignUpDisplay",
+        name: "SignUpPage",
         components: {
             SignUp,
         }
