@@ -1,7 +1,7 @@
 <template>
     <div id="mainContainer">  
         <div id="imageContainer">  
-            <img src="../assets/signup.jpeg" alt="signup picture">
+            <img src="../assets/foodsplash.jpeg" alt="signup picture">
         </div>
 
         <div id="formContainer"> 
@@ -37,7 +37,7 @@
  
  
 <script>
-    import { getAuth, createUserWithEmailAndPassword, updateProfile, sendEmailVerification, onAuthStateChanged} from "firebase/auth";
+    import { getAuth, createUserWithEmailAndPassword, updateProfile} from "firebase/auth";
 
     export default {
         name:"SignUp",

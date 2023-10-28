@@ -9,12 +9,12 @@ const firebaseConfig = {
   storageBucket: "drigmo2-8f507.appspot.com",
   messagingSenderId: "56142698014",
   appId: "1:56142698014:web:57e408a5a61e960037c00f",
-  measurementId: "G-LT1W3SE66P"
 };
 
 
-const firebaseApp = initializeApp(firebaseConfig);
-const storage = getStorage(firebaseApp);
-  
+const drigmo2 = initializeApp(firebaseConfig);
+export default drigmo2;
+
+const storage = getStorage(firebaseApp);  
 export {storage}
-export default firebaseApp;
+
