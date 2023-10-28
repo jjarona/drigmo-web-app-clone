@@ -1,5 +1,5 @@
 <template>
-    <div class="others-profile-page">
+    <div class="own-profile-page">
         <UserProfileInfo :user="viewedUser" />
         
         <div class="actions">
@@ -14,8 +14,7 @@
 import UserProfileInfo from "@/components/UserProfileInfo.vue";
 import PostsContainer from "@/components/PostsContainer.vue";
 import FoodListsContainer from "@/components/FoodListsContainer.vue";
-import FollowButton from "@/components/FollowButton.vue";
-import ShareProfileButton from "@/components/ShareProfileButton.vue";
+import ShareProfileButton from "@/components/FollowButton.vue";
 import TabSelector from "@/components/TabSelector.vue";
 
 export default {

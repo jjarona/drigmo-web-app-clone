@@ -14,11 +14,30 @@
 
 </template>
     
-<script>
-    export default {
-    name: "PostItem"
-    };
+<script> //to be linked to Firebase 
+export default {
+  name: "PostItem",
+
+  props: {
+    caption: {
+      type: String,
+      required: true
+    },
+    description: {
+      type: String,
+      required: true
+    },
+    images: {
+      type: Array,
+      required: true,
+      validator(images) {
+        return images.length === 3; // expecting exactly 3 images for now
+      }
+    }
+  }
+};
 </script>
+
 
 <style>
     .post-item-container {
