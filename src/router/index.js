@@ -15,3 +15,20 @@ const routes = [
       component: SignUpPage,
     }
 ];
+
+const router = createRouter({
+  history: createWebHistory(),
+  routes,
+});
+
+let isAuthenticated = false;
+
+const authPromise = new Promise((resolve) => {
+  onAuthStateChanged(auth, (user) => {
+    isAuthenticated = !!user;
+    resolve();
+  });
+});
+
+
+export default router;
