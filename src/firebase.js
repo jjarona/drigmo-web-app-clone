@@ -1,18 +1,20 @@
-import firebase from "firebase/app";
-import "firebase/database"; // If using Firebase database
-import "firebase/auth";  // If using Firebase authentication
+import { initializeApp } from 'firebase/app'
+import { getStorage } from "firebase/storage";
 
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyAilf1XaFNXUMPgDRS9dzZRElebpUHQoHU",
-    authDomain: "drigmo2.firebaseapp.com",
-    projectId: "drigmo2",
-    storageBucket: "drigmo2.appspot.com",
-    messagingSenderId: "481420763623",
-    appId: "1:481420763623:web:daf1427c7137f0f82fdd42",
-    measurementId: "G-GGPZ0E1XVM"
-  };
+  apiKey: "AIzaSyAOK75O6JGOgR9UFbglIR0IArQqba0VOrQ",
+  authDomain: "drigmo2-8f507.firebaseapp.com",
+  projectId: "drigmo2-8f507",
+  storageBucket: "drigmo2-8f507.appspot.com",
+  messagingSenderId: "56142698014",
+  appId: "1:56142698014:web:57e408a5a61e960037c00f",
+};
 
-firebase.initializeApp(firebaseConfig);
 
-export default firebaseApp;
+const drigmo2 = initializeApp(firebaseConfig);
+export default drigmo2;
+
+const storage = getStorage(firebaseApp);  
+export {storage}
+
